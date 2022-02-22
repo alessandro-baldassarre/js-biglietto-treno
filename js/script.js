@@ -3,7 +3,7 @@
 let kmRoute = parseInt(prompt("How many kilometers does the route have?"));
 console.log(kmRoute);
 
-if (!(isNaN(kmRoute))) {
+if (!(isNaN(kmRoute)) && kmRoute > 0) {
     console.log("ok, the number insert is correct");
     
 } else {
@@ -15,7 +15,7 @@ if (!(isNaN(kmRoute))) {
 let agePassenger = Math.floor(parseInt(prompt("how old are the passenger?")));
 console.log(agePassenger);
 
-if (!isNaN(agePassenger) && agePassenger < 110) {
+if (!isNaN(agePassenger) && agePassenger < 110 && agePassenger > 0) {
     console.log("ok, the number insert is correct");
     
 } else {
