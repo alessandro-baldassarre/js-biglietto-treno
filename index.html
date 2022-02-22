@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Biglietto del Treno</title>
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="img/92080-and-playstation-text-black-logo-white_64x64.ico">
 
     <!-- fontaweson -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -23,25 +21,33 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-    
-    <h1>Biglietto del treno</h1>
+    <main>
+        <div class="container-fluid p-5">
+            <div class="row text-center justify-content-center">
+                <div class="col-12 col-lg-4 border border-success p-3">
+                <h1 class="fw-bold mb-5 text-uppercase text-danger">bool-train</h1>
 
-    <h4>Kilometres of the route:</h4>
-    <p id="km-route"></p>
+                <h4>Kilometres of the route:</h4>
+                <p id="km-route"></p>
 
-    <h4>Your age is:</h4>
-    <p id="age-passenger"></p>
+                <h4>Age of the passenger:</h4>
+                <p id="age-passenger"></p>
 
-    <h4>Your ticket costs:</h4>
-    <p id="ticket-cost"></p>
+                <h4>Discount applied:</h4>
+                <p id="discount"></p>
+            
+                <h4 class="fw-bold fs-2 text-uppercase">Price:</h4>
+                <p id="ticket-price"></p>
+                <button type="button" class="btn btn-primary p-2">Buy Ticket</button>
+            </div>
+        </div>
 
-    <h4>Discount applied:</h4>
-    <p id="discount"></p>
 
-
-    <!-- custom javascript -->
-    <script src="js/script.js"></script>
-
+        <!-- custom javascript -->
+        <script src="js/script.js"></script>
+    </main>
 </body>
+
 </html>
